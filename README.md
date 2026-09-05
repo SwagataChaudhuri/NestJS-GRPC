@@ -16,25 +16,26 @@ ESM-only packages via Node's native `require(esm)` support.
 
 - Node.js **>= 24.9** (needed for Jest to load Nest's ESM packages during
   tests — see [Running tests](#running-tests)).
+- [pnpm](https://pnpm.io/)
 
 ## Project setup
 
 ```bash
-$ npm install
+$ pnpm install
 ```
 
 ## Compile and run the project
 
 ```bash
 # Development
-$ npm run start
+$ pnpm run start
 
 # Watch Mode
-$ npm run start:dev
+$ pnpm run start:dev
 
 # Production Mode
-$ npm run build
-$ npm run start:prod
+$ pnpm run build
+$ pnpm run start:prod
 ```
 
 Once running, try the hybrid REST + gRPC flow:
@@ -51,13 +52,13 @@ Both routes are served over HTTP but resolved by calling the gRPC
 
 ```bash
 # unit tests
-$ npm run test
+$ pnpm run test
 
 # e2e tests (boots the real hybrid app and exercises it over HTTP + gRPC)
-$ npm run test:e2e
+$ pnpm run test:e2e
 
 # test coverage
-$ npm run test:cov
+$ pnpm run test:cov
 ```
 
 Nest's `@nestjs/*` packages ship as ESM. Jest loads them via Node's
@@ -67,8 +68,8 @@ Nest's `@nestjs/*` packages ship as ESM. Jest loads them via Node's
 ## Linting & formatting
 
 ```bash
-$ npm run lint
-$ npm run format
+$ pnpm run lint
+$ pnpm run format
 ```
 
 Linting uses [oxlint](https://oxc.rs/docs/guide/usage/linter.html), the

@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ClientGrpc } from '@nestjs/microservices';
 import { of } from 'rxjs';
-import { UserController } from './user.controller';
+import { UserController } from '../user.controller';
 
 describe('UserController', () => {
   let controller: UserController;
